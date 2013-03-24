@@ -22,20 +22,20 @@
 					<td>
 						<a href="http://nodebeginner.org/index-jp.html">
 							<div class="flag">
-								<img src="jp-flag.png" width="24" height="24" alt="japanese flag"/>
+								<img src="flags/jp-flag.png" width="24" height="24" alt="japanese flag"/>
 							</div>
 							<div class="text">日本語で読む</div>
 						</a>
 					</td>
 					<td>
 						<a href="http://nodebeginner.org/index-es.html">
-							<div class="flag"><img src="es-flag.png" width="24" height="24" alt="spanish flag" /></div>
+							<div class="flag"><img src="flags/es-flag.png" width="24" height="24" alt="spanish flag" /></div>
 							<div class="text">Lee este tutorial en Español</div>
 						</a>
 					</td>
 					<td>
 						<a href="http://nodebeginner.org/index-kr.html">
-							<div class="flag"><img src="kr-flag.png" width="24" height="24" alt="korean flag" /></div>
+							<div class="flag"><img src="flags/kr-flag.png" width="24" height="24" alt="korean flag" /></div>
 							<div class="text">이 튜토리얼을 한글로 보세요</div>
 						</a>
 					</td>
@@ -43,19 +43,19 @@
 				<tr>
 					<td>
 						<a href="http://nodebeginner.org/index-zh-cn.html">
-							<div class="flag"><img src="cn-flag.png" width="24" height="24" alt="chinese flag" /></div>
+							<div class="flag"><img src="flags/cn-flag.png" width="24" height="24" alt="chinese flag" /></div>
 							<div class="text">阅读本书中文版</div>
 						</a>
 					</td>
 					<td>
 						<a href="http://nodebeginner.org/index-zh-tw.html">
-							<div class="flag"><img src="cn-flag.png" width="24" height="24" alt="chinese flag" /></div>
+							<div class="flag"><img src="flags/cn-flag.png" width="24" height="24" alt="chinese flag" /></div>
 							<div class="text">阅读本书繁体中文版</div>
 						</a>
 					</td>
 					<td>
 						<a href="http://nodebeginner.org">
-							<div class="flag"><img src="us-flag.png" width="24" height="24" alt="usa flag" /></div>
+							<div class="flag"><img src="flags/us-flag.png" width="24" height="24" alt="usa flag" /></div>
 							<div class="text">Read this tutorial in english</div>
 						</a>
 					</td>
@@ -67,7 +67,8 @@
 		<h1>Node.js для начинающих</h1>
 
 		<div id="author">Автор: <a href="http://twitter.com/manuelkiessling">Manuel Kiessling</a></div>
-		<div style="color:#888; font-family:'Helvetica Neue', sans-serif; font-size:75%; margin-left:279px; margin-top:5px;"><a href="http://www.nodebeginner.ru/">Перевод</a>: <a href="http://artod.ru/">Artod</a>, правка 2013-03-24, spmbt</div>
+		<div style="color:#888; font-family:'Helvetica Neue', sans-serif; font-size:75%; margin-left:279px; margin-top:5px;"><a href="http://www.nodebeginner.ru/">Перевод</a>: <a href="http://artod.ru/">Artod</a>, правка 2013-03-24, spmbt<br>
+		<a href="code/">Коды законченных примеров (альтернатива тексту)</a></div>
 
 		<a name="about"></a>
 		
@@ -1478,7 +1479,7 @@ Request handler 'start' was called.
 			Он делает это, запуская цикл событий, а мы, разработчики, можем использовать это &mdash; мы должны избегать блокирующих операций, где это возможно, и использовать неблокирующие операции вместо них.
 		</p>
 		<p>
-			Но для этого нам надо использовать обратные вызовы, передавая функции внутри тех функций, которые могут сделать то, что занимает некоторое время (как например sleep() на 10 секунд или запрос к базе данных или какое-то дорогостоящее вычисление.)
+			Но для этого нам надо использовать обратные вызовы, передавая функции внутри тех функций, которые могут сделать то, что занимает некоторое время (как, например, sleep() на 10 секунд или запрос к базе данных или какое-то дорогостоящее вычисление.)
 		</p>
 		<p>
 			Таким образом, мы как бы говорим: <em>«Эй, возможноДолгаяФункция(), пожалуйста, сделай вот это, но я, однопотоковый Node.js, не собираюсь ждать здесь, пока ты закончишь, я продолжу выполнение строчек кода ниже тебя, а ты возьми пока вот эту функцию callbackFunction() и вызови её, когда всё сделаешь. Спасибо!»</em>
