@@ -51,6 +51,9 @@ body {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 75%;
 }
+#book a{color: #45c;}
+#book a[href*="#"]{text-decoration: none; border-bottom: 1px dotted #99c;}
+#book a[href*="localhost"]{text-decoration: none; color: #45d;}
 
 #workinprogressnote p {
     font-family: "Helvetica Neue", sans-serif;
